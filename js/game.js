@@ -65,6 +65,7 @@ function level3() {
 }
 
 function level4(){						// Chi Chi's place //
+	showdb1();
 	console.log("level4()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Go to Capsule Corp';
@@ -363,6 +364,6 @@ function hidetext() {
 	document.getElementById('intro_text').style.display = "none";
 }
 
-function showroshi() {
-	document.getElementById('master_roshi').style.display = "visibility"
+function showdb1() {
+	document.getElementById('db1').style.display = "block"
 }

@@ -54,7 +54,7 @@ img.intro_goku{
 	height: 430px;
 	width: auto;
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 }
 
 img.intro_talk{
@@ -62,7 +62,7 @@ img.intro_talk{
 	height: 400px;
 	width: auto;
 	margin-left: 450px;
-	z-index: 1;
+	z-index: 2;
 	margin-top: 100px;
 }
 
@@ -71,4 +71,22 @@ img.master_roshi{
 	width: auto;
 	z-index: 3;
 	visibility: hidden;
+}
+
+img.db1{
+	position: absolute;
+	z-index: 1;
+	height: 7px;
+	width: auto;
+	left: 680px;
+	top: 150px;
+}
+
+img.db2{
+	position: absolute;
+	z-index: 1;
+	height: 7px;
+	width: auto;
+	top: 365px;
+	left: 130px;
 }
