@@ -7,24 +7,28 @@
 </head>
 <body>
 
-<main>
+<div class="container">
+		<section id="status"></section>
 
-	<section id="status"></section>
+		<section id="level_title">Dragon ball collecter</section>
+	<main>
 
-	<section id="level_title">Start</section>
-
-	<nav>
-
-		<button id="option1" onclick="javascript:Level1()">Optie 1</button>
-		<button id="option2">Optie 2</button>
-		<button id="option3">Optie 3</button>
-
-	</nav>
-
-	<img id="level_image" class="level_image" src="img/rpg.png">
-
-</main>
-
-	<script src="js/game.js" type="text/javascript" ></script>
+		<div class="image">
+			<img id="intro_text" class="intro_talk" style="display: none;" src="img/introtalk.png">
+			<img id="intro2_goku" class="intro_goku" style="display: none;" src="img/goku_lach.png">
+			<img id="intro_goku" class="intro_goku" src="img/goku_intro.png">
+			<img id="level_image" class="level_image" src="img/beginscherm.png">
+			<img id="master_roshi" class="master_roshi" src="img/masterroshi.png">
+		</div>
+		
+		<nav>
+			<button id="option1" onclick="javascript:Level1();">Begin</button>
+			<button id="option2"></button>
+			<button id="option3"></button>
+		</nav>
+	</main>
+</div>
+<audio autoplay="autoplay" source src="music/theme1.mp3" type="audio/mpeg"></audio>
+	<script src="js/game.js" type="text/javascript"></script>
 </body>
 </html>
