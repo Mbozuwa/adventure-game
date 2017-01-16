@@ -4,6 +4,13 @@ document.getElementById('option1').innerHTML = 'Go!';
 document.getElementById('level_title').innerHTML = 'Dragon Ball Collecter';
 
 var db1 = false;
+var db2 = false;
+var db3 = false;
+var db4 = false;
+var db5 = false;
+var db6 = false;
+var db7 = false;
+var alldb = false;
 
 // jquery variant
 //$('#option1').html('Dit is keuze 1');
@@ -11,6 +18,7 @@ var db1 = false;
 
 // https://www.youtube.com/watch?v=4ba1BqJ4S2M
 
+ 
 
 
 function Level1() {
@@ -76,7 +84,14 @@ function level4a(){ 					// Capsule Corp //
 	console.log("level4a()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Go to the backyard';
-	opt1.setAttribute("onclick", "javascript:level4aa()");
+	opt1.onclick = function() {
+
+			if(alldb) {
+			Level4aa();
+		} else {
+			alert('You dont have all the dragon balls');
+		}
+	}
 	var opt2 = document.getElementById('option2');
 	opt2.innerHTML = 'Go back';
 	opt2.setAttribute("onclick", "javascript:level4()");
@@ -185,8 +200,8 @@ function level8(){						// Landscape right //
 function level9(){						// Landscape South // 
 	console.log("'level9()")
 	var opt1 = document.getElementById('option1');
-	opt1.innerHTML = 'Go to North City';
-	opt1.setAttribute("onclick", "javascript:level9()");
+	opt1.innerHTML = 'Go to City (North)';
+	opt1.setAttribute("onclick", "javascript:level12()");
 	var opt2 = document.getElementById('option2');
 	opt2.innerHTML = 'Go back';
 	opt2.setAttribute("onclick", "javascript:level8()");
@@ -215,8 +230,117 @@ function level10(){						// roshi //
 	document.getElementById('level_image').src = 'img/roshi.png';
 }
 
+function level6(){						// Steenplek // 
+	console.log("level6()")
+	var opt1 = document.getElementById('option1');
+	opt1.innerHTML = 'Go to Tournament area';
+	opt1.setAttribute("onclick", "javascript:level11()");
+	var opt2 = document.getElementById('option2');
+	opt2.innerHTML = 'Go to the School';
+	opt2.setAttribute("onclick", "javascript:level16()");
+	var opt3 = document.getElementById('option3');
+	opt3.innerHTML = 'Go Back';
+	opt3.setAttribute("onclick", "javascript:level3()");
 
+	document.getElementById('level_title').innerHTML = 'Wasteland';
+	document.getElementById('level_image').src = 'img/steenplek.jpg';
+}
 
+function level11(){						// tournament area // 
+	console.log("level11()")
+	var opt1 = document.getElementById('option1');
+	opt1.innerHTML = 'Go to city (North)';
+	opt1.setAttribute("onclick", "javascript:level12()");
+	var opt2 = document.getElementById('option2');
+	opt2.innerHTML = 'Go to city (South)';
+	opt2.setAttribute("onclick", "javascript:level6()");
+	var opt3 = document.getElementById('option3');
+	opt3.innerHTML = 'Go back';
+	opt3.setAttribute("onclick", "javascript:level5()");
+
+	document.getElementById('level_title').innerHTML = 'Tournament area';
+	document.getElementById('level_image').src = 'img/toernooi.jpg';
+}
+
+function level12(){						// City North // 
+	console.log("level12()")
+	var opt1 = document.getElementById('option1');
+	opt1.innerHTML = 'Go to city (East)';
+	opt1.setAttribute("onclick", "javascript:level13()");
+	var opt2 = document.getElementById('option2');
+	opt2.innerHTML = 'Go to city (West)';
+	opt2.setAttribute("onclick", "javascript:level15()");
+	var opt3 = document.getElementById('option3');
+	opt3.innerHTML = 'Go to Tournament Area';
+	opt3.setAttribute("onclick", "javascript:level11()");
+
+	document.getElementById('level_title').innerHTML = 'City North';
+	document.getElementById('level_image').src = 'img/stad_noord.jpg';
+}
+
+function level13(){						// City East // 
+	console.log("level13()")
+	var opt1 = document.getElementById('option1');
+	opt1.innerHTML = 'Go to city (North)';
+	opt1.setAttribute("onclick", "javascript:level12()");
+	var opt2 = document.getElementById('option2');
+	opt2.innerHTML = 'Go to city (south)';
+	opt2.setAttribute("onclick", "javascript:level14()");
+	var opt3 = document.getElementById('option3');
+	opt3.innerHTML = '';
+	opt3.setAttribute("onclick", "javascript:level()");
+
+	document.getElementById('level_title').innerHTML = 'City East';
+	document.getElementById('level_image').src = 'img/stad_east.jpg';
+}
+
+function level14(){						// City South // 
+	console.log("level14()")
+	var opt1 = document.getElementById('option1');
+	opt1.innerHTML = 'Go to city (East)';
+	opt1.setAttribute("onclick", "javascript:level13()");
+	var opt2 = document.getElementById('option2');
+	opt2.innerHTML = 'Go to city (West)';
+	opt2.setAttribute("onclick", "javascript:level15()");
+	var opt3 = document.getElementById('option3');
+	opt3.innerHTML = '';
+	opt3.setAttribute("onclick", "javascript:level()");
+
+	document.getElementById('level_title').innerHTML = 'City South';
+	document.getElementById('level_image').src = 'img/stad_zuid.png';
+}
+
+function level15(){						// City West // 
+	console.log("level15()")
+	var opt1 = document.getElementById('option1');
+	opt1.innerHTML = 'Go to city (North)';
+	opt1.setAttribute("onclick", "javascript:level12()");
+	var opt2 = document.getElementById('option2');
+	opt2.innerHTML = 'Go to city (South)';
+	opt2.setAttribute("onclick", "javascript:level14()");
+	var opt3 = document.getElementById('option3');
+	opt3.innerHTML = '';
+	opt3.setAttribute("onclick", "javascript:level()");
+
+	document.getElementById('level_title').innerHTML = 'City West';
+	document.getElementById('level_image').src = 'img/stad_west.png';
+}
+
+function level16(){						// City West // 
+	console.log("level16()")
+	var opt1 = document.getElementById('option1');
+	opt1.innerHTML = 'Go to city (North)';
+	opt1.setAttribute("onclick", "javascript:level12()");
+	var opt2 = document.getElementById('option2');
+	opt2.innerHTML = 'Go to city (East)';
+	opt2.setAttribute("onclick", "javascript:level13()");
+	var opt3 = document.getElementById('option3');
+	opt3.innerHTML = 'Go Back';
+	opt3.setAttribute("onclick", "javascript:level6()");
+
+	document.getElementById('level_title').innerHTML = 'School';
+	document.getElementById('level_image').src = 'img/school.png';
+}
 
 
 function hidegoku() {
