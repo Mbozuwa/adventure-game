@@ -26,7 +26,7 @@ function Level1() {
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Next';
 	opt1.setAttribute("onclick", "javascript:Level2()");
-
+	
 	document.getElementById('level_title').innerHTML = 'Intro';
 	document.getElementById('level_image').src = 'img/cellgames.jpg';
 
@@ -87,7 +87,7 @@ function level4a(){ 					// Capsule Corp //
 	opt1.innerHTML = 'Go to the backyard';
 	opt1.onclick = function() {
 
-			if(alldb) {
+		if(alldb) {
 			Level4aa();
 		} else {
 			alert('You dont have all the dragon balls');
@@ -118,6 +118,7 @@ function level4aa(){					// Capsule Corp Backyard //
 }
 
 function level5(){						// Wasteland // 
+	showdb2();
 	console.log("level5()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Go to the left';
@@ -353,7 +354,7 @@ function showlach() {
 }
 
 function hidelach() {
-	document.getElementById('intro2_goku').style.display = 'none'
+	document.getElementById('intro2_goku').style.display = 'none';
 }
 
 function showtext() {
@@ -365,5 +366,25 @@ function hidetext() {
 }
 
 function showdb1() {
-	document.getElementById('db1').style.display = "block"
+	document.getElementById('db1').style.display = "block";
+}
+
+function showdb2() {
+	document.getElementById('db2').style.display = "block";
+}
+
+function showdb3() {
+	document.getElementById('db3').style.display = "block";
+}
+
+function showdb5() {
+	document.getElementById('db5').style.display = "block";
+}
+
+function showdb6() {
+	document.getElementById('db6').style.display = "block";
+}
+
+function showdb7() {
+	document.getElementById('db7').style.display = "block";
 }
