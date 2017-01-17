@@ -134,7 +134,8 @@ function level5(){						// Wasteland //
 	document.getElementById('level_image').src = 'img/wasteland.jpg';
 }
 
-function level7(){						// Landscape left // 
+function level7(){						// Landscape left /
+	hidedb3();
 	console.log("level7()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Go to the Mountains';
@@ -151,6 +152,8 @@ function level7(){						// Landscape left //
 }
 
 function level7a(){						// Mountains // 
+	hidedb2();
+	showdb3();
 	console.log("level7a()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Complete Game!';
@@ -167,6 +170,7 @@ function level7a(){						// Mountains //
 }
 
 function level7aa(){						// Fail // 
+	hidedb3();
 	console.log("level7a()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Start over!';
@@ -183,7 +187,7 @@ function level7aa(){						// Fail //
 }	
 	
 	
-function level8(){						// Landscape right // 	
+function level8(){						// Landscape right // 
 	console.log("level8()")	
 	var opt1 = document.getElementById('option1');	
 	opt1.innerHTML = 'Go further south';	
@@ -217,6 +221,7 @@ function level9(){						// Landscape South //
 
 
 function level10(){						// roshi // 
+	showdb4();
 	console.log("level10()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = '';
@@ -249,6 +254,7 @@ function level6(){						// Steenplek //
 }
 
 function level11(){						// tournament area // 
+	showdb7();
 	console.log("level11()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Go to city (North)';
@@ -265,6 +271,7 @@ function level11(){						// tournament area //
 }
 
 function level12(){						// City North // 
+	showdb5();
 	console.log("level12()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Go to city (East)';
@@ -281,6 +288,7 @@ function level12(){						// City North //
 }
 
 function level13(){						// City East // 
+	showdb6();
 	console.log("level13()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Go to city (North)';
@@ -328,7 +336,7 @@ function level15(){						// City West //
 	document.getElementById('level_image').src = 'img/stad_west.png';
 }
 
-function level16(){						// City West // 
+function level16(){						// School // 
 	console.log("level16()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Go to city (North)';
