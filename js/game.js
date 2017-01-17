@@ -18,7 +18,6 @@ var alldb = false;
 
 // https://www.youtube.com/watch?v=4ba1BqJ4S2M
 
- 
 
 
 function Level1() {
@@ -49,6 +48,7 @@ function Level2() {
 function level3() {
 	hidetext();
 	hidelach();
+	hidedb1();
 	console.log("level3()");
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Go to Chi Chis place';
@@ -82,6 +82,7 @@ function level4(){						// Chi Chi's place //
 }
 
 function level4a(){ 					// Capsule Corp // 
+	hidedb1();
 	console.log("level4a()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Go to the backyard';
