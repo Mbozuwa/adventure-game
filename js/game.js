@@ -26,7 +26,7 @@ function Level1() {
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Next';
 	opt1.setAttribute("onclick", "javascript:Level2()");
-	
+
 	document.getElementById('level_title').innerHTML = 'Intro';
 	document.getElementById('level_image').src = 'img/cellgames.jpg';
 
@@ -170,39 +170,39 @@ function level7aa(){						// Fail //
 	console.log("level7a()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Start over!';
-	opt1.setAttribute("onclick", "javascript:Level1()");
-	var opt2 = document.getElementById('option2');
-	opt2.innerHTML = '';
-	opt2.setAttribute("onclick", "javascript:level()");
-	var opt3 = document.getElementById('option3');
-	opt3.innerHTML = '';
-	opt3.setAttribute("onclick", "javascript:level()");
-
-	document.getElementById('level_title').innerHTML = 'You Lost!';
-	document.getElementById('level_image').src = 'img/troll.png';
-}
-
-
-function level8(){						// Landscape right // 
-	console.log("level8()")
-	var opt1 = document.getElementById('option1');
-	opt1.innerHTML = 'Go further south';
-	opt1.setAttribute("onclick", "javascript:level9()");
-	var opt2 = document.getElementById('option2');
-	opt2.innerHTML = 'Go back';
-	opt2.setAttribute("onclick", "javascript:level5()");
-	var opt3 = document.getElementById('option3');
-	opt3.innerHTML = '';
-	opt3.setAttribute("onclick", "javascript:level()");
-
-	document.getElementById('level_title').innerHTML = 'landscape right';
-	document.getElementById('level_image').src = 'img/landschap2.png';
-}
-
-function level9(){						// Landscape South // 
-	console.log("'level9()")
-	var opt1 = document.getElementById('option1');
-	opt1.innerHTML = 'Go to City (North)';
+	opt1.setAttribute("onclick", "javascript:Level1()");	
+	var opt2 = document.getElementById('option2');	
+	opt2.innerHTML = '';	
+	opt2.setAttribute("onclick", "javascript:level()");	
+	var opt3 = document.getElementById('option3');	
+	opt3.innerHTML = '';	
+	opt3.setAttribute("onclick", "javascript:level()");	
+	
+	document.getElementById('level_title').innerHTML = 'You Lost!';	
+	document.getElementById('level_image').src = 'img/troll.png';	
+}	
+	
+	
+function level8(){						// Landscape right // 	
+	console.log("level8()")	
+	var opt1 = document.getElementById('option1');	
+	opt1.innerHTML = 'Go further south';	
+	opt1.setAttribute("onclick", "javascript:level9()");	
+	var opt2 = document.getElementById('option2');	
+	opt2.innerHTML = 'Go back';	
+	opt2.setAttribute("onclick", "javascript:level5()");	
+	var opt3 = document.getElementById('option3');	
+	opt3.innerHTML = '';	
+	opt3.setAttribute("onclick", "javascript:level()");	
+	
+	document.getElementById('level_title').innerHTML = 'landscape right';	
+	document.getElementById('level_image').src = 'img/landschap2.png';	
+}	
+	
+function level9(){						// Landscape South // 	
+	console.log("'level9()")	
+	var opt1 = document.getElementById('option1');	
+	opt1.innerHTML = 'Go to City (North)';	
 	opt1.setAttribute("onclick", "javascript:level12()");
 	var opt2 = document.getElementById('option2');
 	opt2.innerHTML = 'Go back';
@@ -369,22 +369,54 @@ function showdb1() {
 	document.getElementById('db1').style.display = "block";
 }
 
+function hidedb1() {
+	document.getElementById('db1').style.display = "none";
+}
+
 function showdb2() {
 	document.getElementById('db2').style.display = "block";
+}
+
+function hidedb2() {
+	document.getElementById('db2').style.display = "none";
 }
 
 function showdb3() {
 	document.getElementById('db3').style.display = "block";
 }
 
+function hidedb3() {
+	document.getElementById('db3').style.display = "none";
+}
+
+function showdb4() {
+	document.getElementById('db4').style.display = "block";
+}
+
+function hidedb4() {
+	document.getElementById('db4').style.display = "none";
+}
+
 function showdb5() {
 	document.getElementById('db5').style.display = "block";
+}
+
+function hideb5() {
+	document.getElementById('db5').style.display = "none";
 }
 
 function showdb6() {
 	document.getElementById('db6').style.display = "block";
 }
 
+function hidedb6() {
+	document.getElementById('db6').style.display = "none";
+}
+
 function showdb7() {
 	document.getElementById('db7').style.display = "block";
+}
+
+function hidedb7() {
+	document.getElementById('db7').style.display = "none";
 }
