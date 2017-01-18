@@ -16,9 +16,6 @@ var alldb = false;
 //$('#option1').html('Dit is keuze 1');
 
 
-// https://www.youtube.com/watch?v=4ba1BqJ4S2M
-
-
 
 function Level1() {
 	console.log("Level1()");
@@ -91,8 +88,8 @@ function level4a(){ 					// Capsule Corp //
 	opt1.innerHTML = 'Go to the backyard';
 	opt1.onclick = function() {
 
-		if(alldb) {
-			Level4aa();
+		if(alldb == true) {
+			level4b();
 		} else {
 			alert('You dont have all the dragon balls');
 		}
@@ -108,7 +105,20 @@ function level4a(){ 					// Capsule Corp //
 	document.getElementById('level_image').src = 'img/capsulecorp.png';
 }
 
-function level4aa(){					// Capsule Corp Backyard //
+function level4b(){					// Capsule Corp Backyard //
+	console.log("level4b()")
+	var opt1 = document.getElementById('option1');
+	opt1.innerHTML = 'Summon Shenron';
+	opt1.setAttribute("onclick", "javascript:level4aaa()");
+	var opt2 = document.getElementById('option2');
+	opt2.innerHTML = 'Go back';
+	opt2.setAttribute("onclick", "javascript:level4a()");
+
+	document.getElementById('level_title').innerHTML = 'Backyard';
+	document.getElementById('level_image').src = 'img/capsuleback.jpg';
+}
+
+function level4c(){					// shenron //
 	console.log("level4aa()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Summon Shenron';
@@ -122,7 +132,9 @@ function level4aa(){					// Capsule Corp Backyard //
 }
 
 function level5(){						// Wasteland // 
+	hidedb7();
 	showdb2();
+
 	console.log("level5()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Go to the left';
@@ -245,6 +257,7 @@ function level10(){						// roshi //
 }
 
 function level6(){						// Wasteland // 
+	hidedb7();
 	console.log("level6()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Go to Tournament area';
@@ -262,6 +275,7 @@ function level6(){						// Wasteland //
 
 function level11(){						// tournament area // 
 	showdb7();
+	hidedb5();
 	console.log("level11()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Go to city (North)';
@@ -316,6 +330,7 @@ function level13(){						// City East //
 
 function level14(){						// City South // 
 	hidedb7();
+	hidedb6();
 	console.log("level14()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Go to city (East)';
@@ -332,6 +347,7 @@ function level14(){						// City South //
 }
 
 function level15(){						// City West // 
+	hidedb5();
 	console.log("level15()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Go to city (North)';
@@ -420,7 +436,7 @@ function showdb5() {
 	document.getElementById('db5').style.display = "block";
 }
 
-function hideb5() {
+function hidedb5() {
 	document.getElementById('db5').style.display = "none";
 }
 
@@ -432,7 +448,7 @@ function hidedb6() {
 	document.getElementById('db6').style.display = "none";
 }
 
-function showdb7() {
+function  showdb7() {
 	document.getElementById('db7').style.display = "block";
 }
 
