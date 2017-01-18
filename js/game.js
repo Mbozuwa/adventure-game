@@ -10,7 +10,7 @@ var db4 = false;
 var db5 = false;
 var db6 = false;
 var db7 = false;
-var alldb = false;
+var alldb = true;
 
 // jquery variant
 //$('#option1').html('Dit is keuze 1');
@@ -108,26 +108,58 @@ function level4a(){ 					// Capsule Corp //
 function level4b(){					// Capsule Corp Backyard //
 	console.log("level4b()")
 	var opt1 = document.getElementById('option1');
-	opt1.innerHTML = 'Summon Shenron';
-	opt1.setAttribute("onclick", "javascript:level4aaa()");
+	opt1.innerHTML = 'Place the dragon balls on the ground';
+	opt1.setAttribute("onclick", "javascript:level4c()");
 	var opt2 = document.getElementById('option2');
-	opt2.innerHTML = 'Go back';
+	opt2.innerHTML = '';
 	opt2.setAttribute("onclick", "javascript:level4a()");
+	var opt3 = document.getElementById('option3');
+	opt3.innerHTML = 'Go back';
+	opt3.setAttribute("onclick", "javascript:level4a()");
 
 	document.getElementById('level_title').innerHTML = 'Backyard';
 	document.getElementById('level_image').src = 'img/capsuleback.jpg';
 }
 
-function level4c(){					// shenron //
-	console.log("level4aa()")
+function level4c(){					// summon shenron //
+	console.log("level4c()")
 	var opt1 = document.getElementById('option1');
-	opt1.innerHTML = 'Summon Shenron';
-	opt1.setAttribute("onclick", "javascript:level4aaa()");
+	opt1.innerHTML = 'Eternal Dragon. By Your name I summon you forth, Shenron!';
+	opt1.setAttribute("onclick", "javascript:level4d()");
 	var opt2 = document.getElementById('option2');
-	opt2.innerHTML = 'Go back';
-	opt2.setAttribute("onclick", "javascript:level4a()");
+	opt2.innerHTML = 'By Your name I summon you forth, Eternal Dragon Shenron!';
+	opt2.setAttribute("onclick", "javascript:level7aa()");
+	var opt3 = document.getElementById('option3');
+	opt3.innerHTML = 'Shenron, by Your name I summon you forth, Eternal Dragon!';
+	opt3.setAttribute("onclick", "javascript:level7aa()");
+
+	document.getElementById('level_title').innerHTML = 'Select the right sentence to summon';
+	document.getElementById('level_image').src = 'img/capsuleback.jpg';
+}
+
+function level4d(){					// wish //
+	console.log("level4d()")
+	var opt1 = document.getElementById('option1');
+	opt1.innerHTML = 'Wish everyone back to life!';
+	opt1.setAttribute("onclick", "javascript:level999()");
+	var opt2 = document.getElementById('option2');
+	opt2.innerHTML = '';
+	opt2.setAttribute("onclick", "javascript:level()");
+	var opt3 = document.getElementById('option3');
+	opt3.innerHTML = '';
+	opt3.setAttribute("onclick", "javascript:level()");
 
 	document.getElementById('level_title').innerHTML = 'Backyard';
+	document.getElementById('level_image').src = 'img/capsuleback.jpg';
+}
+
+function level999(){					// Done //
+	console.log("level999()")
+	var opt1 = document.getElementById('option1');
+	opt1.innerHTML = '';
+	opt1.setAttribute("onclick", "javascript:level999()");
+
+	document.getElementById('level_title').innerHTML = 'You did it!';
 	document.getElementById('level_image').src = 'img/capsuleback.jpg';
 }
 
