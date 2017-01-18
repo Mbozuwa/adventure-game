@@ -49,15 +49,16 @@ function level3() {
 	hidetext();
 	hidelach();
 	hidedb1();
+	hidedb2();
 	console.log("level3()");
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Go to Chi Chis place';
 	opt1.setAttribute("onclick", "javascript:level4()");
 	var opt2 = document.getElementById('option2');
-	opt2.innerHTML = 'Go to wasteland';
+	opt2.innerHTML = 'Go to Desert';
 	opt2.setAttribute("onclick", "javascript:level5()");
 	var opt3 = document.getElementById('option3');
-	opt3.innerHTML = 'Go to desert';
+	opt3.innerHTML = 'Go to Wasteland';
 	opt3.setAttribute("onclick", "javascript:level6()");
 
 	document.getElementById('level_title').innerHTML = 'Kami lookout';
@@ -66,6 +67,8 @@ function level3() {
 
 function level4(){						// Chi Chi's place //
 	showdb1();
+	hidedb4();
+	hideroshi();
 	console.log("level4()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Go to Capsule Corp';
@@ -131,12 +134,12 @@ function level5(){						// Wasteland //
 	opt3.innerHTML = 'Go Back';
 	opt3.setAttribute("onclick", "javascript:level3()");
 
-	document.getElementById('level_title').innerHTML = 'Wasteland';
+	document.getElementById('level_title').innerHTML = 'Desert';
 	document.getElementById('level_image').src = 'img/wasteland.jpg';
 }
 
 function level7(){						// Landscape left /
-	hidedb3();
+	hidedb2();
 	console.log("level7()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Go to the Mountains';
@@ -189,6 +192,7 @@ function level7aa(){						// Fail //
 	
 	
 function level8(){						// Landscape right // 
+	hidedb2();
 	console.log("level8()")	
 	var opt1 = document.getElementById('option1');	
 	opt1.innerHTML = 'Go further south';	
@@ -222,7 +226,9 @@ function level9(){						// Landscape South //
 
 
 function level10(){						// roshi // 
+	hidedb1();
 	showdb4();
+	showroshi();
 	console.log("level10()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = '';
@@ -238,7 +244,7 @@ function level10(){						// roshi //
 	document.getElementById('level_image').src = 'img/roshi.png';
 }
 
-function level6(){						// Steenplek // 
+function level6(){						// Wasteland // 
 	console.log("level6()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Go to Tournament area';
@@ -272,7 +278,9 @@ function level11(){						// tournament area //
 }
 
 function level12(){						// City North // 
+	hidedb7();
 	showdb5();
+	hidedb6();
 	console.log("level12()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Go to city (East)';
@@ -289,6 +297,7 @@ function level12(){						// City North //
 }
 
 function level13(){						// City East // 
+	hidedb5();
 	showdb6();
 	console.log("level13()")
 	var opt1 = document.getElementById('option1');
@@ -306,6 +315,7 @@ function level13(){						// City East //
 }
 
 function level14(){						// City South // 
+	hidedb7();
 	console.log("level14()")
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Go to city (East)';
@@ -428,4 +438,12 @@ function showdb7() {
 
 function hidedb7() {
 	document.getElementById('db7').style.display = "none";
+}
+
+function showroshi() {
+	document.getElementById('master_roshi').style.display = "block";
+}
+
+function hideroshi() {
+	document.getElementById('master_roshi').style.display = "none";
 }

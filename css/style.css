@@ -69,8 +69,10 @@ img.intro_talk{
 img.master_roshi{
 	height: 50px;
 	width: auto;
-	z-index: 3;
-	visibility: hidden;
+	z-index: 1;
+	position: absolute;
+	left: 400px;
+	bottom: 200px;
 }
 
 img.db1{
@@ -106,7 +108,7 @@ img.db4{
 	height: 7px;
 	width: auto;
 	top: 365px;
-	left: 130px;
+	left: 400px;
 }
 
 img.db5{
@@ -114,8 +116,8 @@ img.db5{
 	z-index: 1;
 	height: 7px;
 	width: auto;
-	top: 365px;
-	left: 130px;
+	top: 150px;
+	left: 250px;
 }
 
 img.db6{
