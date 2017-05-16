@@ -7,6 +7,7 @@ body {
 
 nav{
 	width: 25%;
+	position: absolute;
 }
 
 #level_title {
@@ -46,6 +47,11 @@ button{
 
 
 /* images */
+
+table{
+	display: flex;
+	flex-direction: row;
+}
 
 
 img.intro_goku{
@@ -136,4 +142,10 @@ img.db7{
 	width: auto;
 	top: 295px;
 	right: 480px;
+}
+
+img.dbtable{
+	height: 20px;
+	width: auto;
+	padding-left: 10px;
 }

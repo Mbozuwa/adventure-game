@@ -412,6 +412,8 @@ function level16(){						// School //
 }
 
 
+
+
 function hidegoku() {
     document.getElementById('intro_goku').style.visibility = 'hidden';
 }

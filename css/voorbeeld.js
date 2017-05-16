@@ -39,3 +39,16 @@ var persoon = (
 )
 
 console.log(persoon);
+
+
+
+
+I 	C 	R 	U   D 
+n 	r 	e 	p 	e
+d 	e 	a 	d 	l
+e 	a 	d 	a 	e
+x 	t   	t 	t
+  	e   	e 	e
+
+
+Http: Get, post
